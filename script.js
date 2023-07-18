@@ -18,6 +18,10 @@ let cast=document.querySelector(".cast");
 
 let characterstics=document.querySelector(".characterstics");
 
+let released=document.querySelector(".released");
+
+let runTime=document.querySelector(".runtime");
+
 
 
 async function getData(){
@@ -37,6 +41,10 @@ try {
 	cast.innerHTML=result?.Actors;
 
 	movieLogo.src=result?.Poster;
+
+	released.innerHTML=result?.Released;
+
+	runTime.innerHTML=result?.Runtime;
 
 
 
